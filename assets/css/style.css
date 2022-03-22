@@ -9,6 +9,12 @@ h1 {
   color: #603A03;
 }
 
+#tituloDificuldade {
+  font-family: Titulo;
+  font-size: 20px;
+  color: #603A03;
+}
+
 body {
   background-image: url(../img/fundo.jpg) ;
 }
@@ -342,4 +348,30 @@ h3:hover {
     font-size: 17.5px;
     color: #2c1a02;
   }
+}
+
+#dificuldadeJogo {
+  width: 350px;
+  height: 250px;
+  background-color: #FFF;
+  border-color: #603A03;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+.dificuldade {
+  margin-top: 20px;
+font-family: Titulo;
+font-size: 15px;
+background-color: #603A03;
+border: none;
+border-radius: 5px;
+padding: 10px;
+margin-left: 80px;
+margin-right: 80px;
+box-sizing: border-box;
 }

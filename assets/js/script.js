@@ -1,5 +1,34 @@
+var velocidade1;
+var velocidade2;
+
+function selecionaDificuldade() {
+  $("#inicio").hide();
+  $("#iniciaJogo").hide();
+
+  $("#fundoGame").append("<div id='dificuldadeJogo'><h2 id='tituloDificuldade'>Selecione a dificuldade do jogo</h2><h3 class='dificuldade' onClick='dificuldadeFacil()'>Fácil</h3><h3 class='dificuldade' onClick='dificuldadeMedia()'>Média</h3><h3 class='dificuldade' onClick='dificuldadeDificil()'>Difícil</h3></div>")
+}
+
+function dificuldadeFacil() {
+  velocidade1 = 5;
+  velocidade2 = 3;
+  start();
+}
+
+function dificuldadeMedia() {
+  velocidade1 = 6;
+  velocidade2 = 4;
+  start();
+}
+
+function dificuldadeDificil() {
+  velocidade1 = 7;
+  velocidade2 = 4;
+  start();
+}
+
 function start() { // Inicio da função start()
 
+  $("#dificuldadeJogo").remove();
 	$("#inicio").hide();
   $("#iniciaJogo").hide();
 	
@@ -18,8 +47,6 @@ function start() { // Inicio da função start()
   var salvos = 0;
   var perdidos = 0;
   var jogo = {};
-  var velocidade1 = 5;
-  var velocidade2 = 3;
   var energiaAtual = 3;
   var posicaoY = parseInt(Math.random() * 334);
   var TECLA = {
